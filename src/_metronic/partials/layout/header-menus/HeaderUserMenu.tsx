@@ -38,14 +38,14 @@ const HeaderUserMenu: FC = () => {
         </Link>
       </div>
 
-      <div className='menu-item px-5'>
+      {/* <div className='menu-item px-5'>
         <a href='#' className='menu-link px-5'>
           <span className='menu-text'>My Projects</span>
           <span className='menu-badge'>
             <span className='badge badge-light-danger badge-circle fw-bolder fs-7'>3</span>
           </span>
         </a>
-      </div>
+      </div> */}
 
       <div
         className='menu-item px-5'
@@ -54,32 +54,32 @@ const HeaderUserMenu: FC = () => {
         data-kt-menu-flip='bottom'
       >
         <a href='#' className='menu-link px-5'>
-          <span className='menu-title'>My Subscription</span>
+          <span className='menu-title'>Menu ber-sub</span>
           <span className='menu-arrow'></span>
         </a>
 
         <div className='menu-sub menu-sub-dropdown w-175px py-4'>
           <div className='menu-item px-3'>
             <a href='#' className='menu-link px-5'>
-              Referrals
+              Sub Menu 1
             </a>
           </div>
 
           <div className='menu-item px-3'>
             <a href='#' className='menu-link px-5'>
-              Billing
+              Sub Menu 2
             </a>
           </div>
 
           <div className='menu-item px-3'>
             <a href='#' className='menu-link px-5'>
-              Payments
+              Sub Menu 3
             </a>
           </div>
 
           <div className='menu-item px-3'>
             <a href='#' className='menu-link d-flex flex-stack px-5'>
-              Statements
+              Sub menu 4
               <i
                 className='fas fa-exclamation-circle ms-2 fs-7'
                 data-bs-toggle='tooltip'
@@ -107,15 +107,9 @@ const HeaderUserMenu: FC = () => {
         </div>
       </div>
 
-      <div className='menu-item px-5'>
-        <a href='#' className='menu-link px-5'>
-          My Statements
-        </a>
-      </div>
-
       <div className='separator my-2'></div>
 
-      <Languages />
+      {/* <Languages /> */}
 
       <div className='menu-item px-5 my-1'>
         <Link to='/crafted/account/settings' className='menu-link px-5'>

@@ -14,10 +14,10 @@ const Navbar = () => {
   return (
     <div className='app-navbar flex-shrink-0'>
       <div className={clsx('app-navbar-item align-items-stretch', itemClass)}>
-        <Search />
+        {/* <Search /> */}
       </div>
 
-      <div className={clsx('app-navbar-item', itemClass)}>
+      {/* <div className={clsx('app-navbar-item', itemClass)}>
         <div id='kt_activities_toggle' className={btnClass}>
           <KTIcon iconName='chart-simple' className={btnIconClass} />
         </div>
@@ -33,12 +33,12 @@ const Navbar = () => {
           <KTIcon iconName='element-plus' className={btnIconClass} />
         </div>
         <HeaderNotificationsMenu />
-      </div>
+      </div> */}
 
       <div className={clsx('app-navbar-item', itemClass)}>
         <div className={clsx('position-relative', btnClass)} id='kt_drawer_chat_toggle'>
-          <KTIcon iconName='message-text-2' className={btnIconClass} />
-          <span className='bullet bullet-dot bg-success h-6px w-6px position-absolute translate-middle top-0 start-50 animation-blink' />
+          {/* <KTIcon iconName='message-text-2' className={btnIconClass} />
+          <span className='bullet bullet-dot bg-success h-6px w-6px position-absolute translate-middle top-0 start-50 animation-blink' /> */}
         </div>
       </div>
 
@@ -58,7 +58,7 @@ const Navbar = () => {
         <HeaderUserMenu />
       </div>
 
-      {/* {config.app?.header?.default?.menu?.display && (
+      {config.app?.header?.default?.menu?.display && (
         <div className='app-navbar-item d-lg-none ms-2 me-n3' title='Show header menu'>
           <div
             className='btn btn-icon btn-active-color-primary w-35px h-35px'
@@ -67,7 +67,7 @@ const Navbar = () => {
             <KTIcon iconName='text-align-left' className={btnIconClass} />
           </div>
         </div>
-      )} */}
+      )}
     </div>
   )
 }

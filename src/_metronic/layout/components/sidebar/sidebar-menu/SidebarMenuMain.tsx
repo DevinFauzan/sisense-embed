@@ -10,58 +10,34 @@ const SidebarMenuMain = () => {
     <>
       <SidebarMenuItem
         to='/dashboard'
-        icon='element-11'
-        title={intl.formatMessage({id: 'MENU.DASHBOARD'})}
-        fontIcon='bi-app-indicator'
-      />
-      <SidebarMenuItem
-        to='/dashboard'
-        icon='element-11'
+        icon='home'
         title={intl.formatMessage({id: 'MENU.DASHBOARD'})}
         fontIcon='bi-app-indicator'
       />
 
-      <SidebarMenuItem to='/builder' icon='switch' title='Layout Builder' fontIcon='bi-layers' />
-      <div className='menu-item'>
-        <div className='menu-content pt-8 pb-2'>
-          <span className='menu-section text-muted text-uppercase fs-8 ls-1'>Sub Menu</span>
-        </div>
-      </div>
+      <SidebarMenuItem to='/builder' icon='data' title='Data Kependukukan' fontIcon='bi-layers' />
+      
       <SidebarMenuItemWithSub
         to='/crafted/pages'
-        title='Pages'
+        title='Integrasi'
         fontIcon='bi-archive'
-        icon='element-plus'
+        icon='setting'
       >
-        <SidebarMenuItemWithSub to='/crafted/pages/profile' title='Profile' hasBullet={true}>
-          <SidebarMenuItem to='/crafted/pages/profile/overview' title='Overview' hasBullet={true} />
-          <SidebarMenuItem to='/crafted/pages/profile/projects' title='Projects' hasBullet={true} />
-          <SidebarMenuItem
-            to='/crafted/pages/profile/campaigns'
-            title='Campaigns'
-            hasBullet={true}
-          />
-          <SidebarMenuItem
-            to='/crafted/pages/profile/documents'
-            title='Documents'
-            hasBullet={true}
-          />
-          <SidebarMenuItem
-            to='/crafted/pages/profile/connections'
-            title='Connections'
-            hasBullet={true}
-          />
-        </SidebarMenuItemWithSub>
-
-        <SidebarMenuItemWithSub to='/crafted/pages/wizards' title='Wizards' hasBullet={true}>
-          <SidebarMenuItem
+          {/* <SidebarMenuItem
             to='/crafted/pages/wizards/horizontal'
             title='Horizontal'
             hasBullet={true}
-          />
-          <SidebarMenuItem to='/crafted/pages/wizards/vertical' title='Vertical' hasBullet={true} />
-        </SidebarMenuItemWithSub>
+          /> */}
+          <SidebarMenuItem to='/crafted/pages/wizards/vertical' title='KEMENDIKBUD' hasBullet={true} />
+          <SidebarMenuItem to='/crafted/pages/wizards/vertical' title='BKKBN' hasBullet={true} />
+          <SidebarMenuItem to='/crafted/pages/wizards/vertical' title='KEMENKO PMK' hasBullet={true} />
+          <SidebarMenuItem to='/crafted/pages/wizards/vertical' title='BPJS KESEHATAN' hasBullet={true} />
+          <SidebarMenuItem to='/crafted/pages/wizards/vertical' title='BAPPENAS' hasBullet={true} />
       </SidebarMenuItemWithSub>
+      <SidebarMenuItem to='/crafted/pages/wizards/vertical' title='Rancangan Perhitungan Anggaran Makan Gratis' icon='people'/>
+      <SidebarMenuItem to='/profile' title='Pengguna' icon='user'/>
+
+
       {/* <SidebarMenuItemWithSub
         to='/crafted/accounts'
         title='Accounts'
